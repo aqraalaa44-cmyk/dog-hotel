@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الحجز النهائي</title>
+
+<link rel="stylesheet" href="toasl.css">
+<script src="lang.js" defer></script>
+<script src="all.js" defer></script>
+<script src="toasl-lang-fix.js" defer></script>
+<script src="toasl-zoom.js" defer></script>
+</head>
+
+<body>
+<left> <a href="hazm.html">
+    <img src="logo.png" alt="Loving Homes Logo" class="logo" height="50" width="50">
+  </a> </left>
+<h1>اتصل بنا</h1>
+
+<div class="form-container">
+  <h2>الحجز النهائي</h2>
+
+<form onsubmit="showMessage()">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="طلب حجز جديد من الموقع">
+
+    <label>اسم صاحب الحيوان:</label>
+    <input type="text" name="owner_name" id="ownerName" required>
+
+    <label>اسم الحيوان الأليف:</label>
+    <input type="text" name="pet_name" id="petName" required>
+
+    <label>البريد الإلكتروني:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label>رقم الهاتف:</label>
+    <input type="tel" name="phone" id="phone" required>
+
+    <label>اختر الحزمة:</label>
+    <select name="package" id="package" required onchange="showPackageMessage()">
+      <option value="">-- اختر حزمة --</option>
+      <option value="الحزمة المميزة">الحزمة المميزة</option>
+      <option value="الحزمة الكلاسيكية">الحزمة الكلاسيكية</option>
+      <option value="الحزمة الطويلة">الحزمة الطويلة/المخصصة</option>
+    </select>
+
+    <label>ملاحظات اضافية:</label>
+    <textarea name="notes" id="notes"></textarea>
+
+  <button type="submit">ارسال الحجز </button>
+  </form>
+</div>
+<script>
+function showMessage() {
+  alert("تم ارسال الحجز بنجاح");
+}
+</script>
+</body>
+</html>
+

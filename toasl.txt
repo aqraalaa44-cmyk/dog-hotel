@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نموذج الحجز السريع</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef1f2;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #ff6b00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e65c00;
+}
+</style>
+</head>
+
+<body>
+
+<h1>اتصل بنا</h1>
+
+<div class="form-container">
+  <h2>نموذج الحجز السريع</h2>
+
+  <form>
+    <label>اسم صاحب الحيوان:</label>
+    <input type="text" required>
+
+    <label>اسم الحيوان الأليف:</label>
+    <input type="text" required>
+
+    <label>البريد الإلكتروني:</label>
+    <input type="email" required>
+
+    <label>رقم الهاتف:</label>
+    <input type="tel" required>
+
+    <label>تاريخ الدخول:</label>
+    <input type="date" required>
+
+    <label>تاريخ الخروج:</label>
+    <input type="date" required>
+
+    <label>اختر الحزمة:</label>
+    <select required>
+      <option value="">-- اختر حزمة --</option>
+      <option>الحزمة المميزة</option>
+      <option>الحزمة الكلاسيكية</option>
+      <option>الحزمة الطويلة/المخصصة</option>
+    </select>
+
+    <label>ملاحظات إضافية:</label>
+    <textarea></textarea>
+
+    <button type="submit">إرسال الحجز</button>
+  </form>
+</div>
+
+</body>
+</html>
